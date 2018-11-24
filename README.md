@@ -26,7 +26,7 @@ void qbort(const char *message)
 
 
 ## Simple Data Type - Bytelength Tester
-[library link](src/typesize-tester/typesize-tester.c)
+Test for older cpu architectures - [library link](src/typesize-tester/typesize-tester.c)
 ```c
 #include <stdio.h>
 
