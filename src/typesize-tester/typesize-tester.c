@@ -1,33 +1,3 @@
-# C Snippets
-
-## Clear Screen In Unix Compatible Shells
-```c
-void clear_screen()
-{
-    // clear screen in unix compatible shells
-    printf("\033[H\033[2J");
-}
-```
-
-
-## Simple Abort-On-Error Function
-```c
-void qbort(const char *message)
-{
-    if (errno) {
-        perror(message);
-    } else {
-        printf("ERROR: %s\n", message);
-    }
-
-    exit(1);
-}
-```
-
-
-## Simple Data Type - Bytelength Tester
-[library link](src/typesize-tester/typesize-tester.c)
-```c
 #include <stdio.h>
 
 int main(int argc, char *argv[])
@@ -52,4 +22,3 @@ int main(int argc, char *argv[])
 
     return 0;
 }
-```
